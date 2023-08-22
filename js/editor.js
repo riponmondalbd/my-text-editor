@@ -4,7 +4,7 @@ let textBold = false;
 
 document.getElementById('btn-bold').addEventListener('click', function () {
     if (textBold) {
-        outputBox.style.fontWeight = 'normal';
+        outputBox.style.fontWeight = '';
         textBold = false;
     }
     else {
@@ -19,7 +19,7 @@ let isItalic = false;
 
 document.getElementById('btn-italic').addEventListener('click', function () {
     if (isItalic) {
-        outputBox.style.fontStyle = 'normal';
+        outputBox.style.fontStyle = '';
         isItalic = false;
     } else {
         outputBox.style.fontStyle = 'italic';
@@ -33,10 +33,24 @@ let textUnderline = false;
 
 document.getElementById('btn-underline').addEventListener('click', function () {
     if (textUnderline) {
-        outputBox.style.textDecoration = 'none';
+        outputBox.style.textDecoration = '';
         textUnderline = false;
     } else {
         outputBox.style.textDecoration = 'underline';
         textUnderline = true;
+    }
+})
+
+// make text left align to click button
+let leftAlign = false;
+
+document.getElementById('btn-left-align').addEventListener('click', function () {
+    if (leftAlign) {
+        outputBox.style.textAlign = ''
+        leftAlign = false;
+    }
+    else {
+        outputBox.style.textAlign = 'right';
+        leftAlign = true;
     }
 })
