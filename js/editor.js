@@ -1,12 +1,42 @@
 // make text bold to click button
+const outputBox = document.getElementById('output-box');
+let textBold = false;
+
 document.getElementById('btn-bold').addEventListener('click', function () {
-    const outputBox = document.getElementById('output-box');
-    outputBox.style.fontWeight = '700';
+    if (textBold) {
+        outputBox.style.fontWeight = 'normal';
+        textBold = false;
+    }
+    else {
+        outputBox.style.fontWeight = '700';
+        textBold = true;
+    }
 })
 
 // make text italic to click button
-document.getElementById('btn-italic').addEventListener('click', function () {
-    const outputBox = document.getElementById('output-box');
-    outputBox.style.fontStyle = 'italic';
-})
 
+let isItalic = false;
+
+document.getElementById('btn-italic').addEventListener('click', function () {
+    if (isItalic) {
+        outputBox.style.fontStyle = 'normal';
+        isItalic = false;
+    } else {
+        outputBox.style.fontStyle = 'italic';
+        isItalic = true;
+    }
+});
+
+
+// make text underline to click button
+let textUnderline = false;
+
+document.getElementById('btn-underline').addEventListener('click', function () {
+    if (textUnderline) {
+        outputBox.style.textDecoration = 'none';
+        textUnderline = false;
+    } else {
+        outputBox.style.textDecoration = 'underline';
+        textUnderline = true;
+    }
+})
