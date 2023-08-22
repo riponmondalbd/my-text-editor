@@ -11,7 +11,7 @@ document.getElementById('btn-bold').addEventListener('click', function () {
         outputBox.style.fontWeight = '700';
         textBold = true;
     }
-})
+});
 
 // make text italic to click button
 
@@ -39,19 +39,41 @@ document.getElementById('btn-underline').addEventListener('click', function () {
         outputBox.style.textDecoration = 'underline';
         textUnderline = true;
     }
-})
+});
 
 // make text left align to click button
 document.getElementById('btn-left-align').addEventListener('click', function () {
     outputBox.style.textAlign = 'left';
-})
+});
 
 // make text center align to click button
 document.getElementById('btn-center-align').addEventListener('click', function () {
     outputBox.style.textAlign = 'center';
-})
+});
 
 // make text center align to click button
 document.getElementById('btn-right-align').addEventListener('click', function () {
     outputBox.style.textAlign = 'right';
-})
+});
+
+// make text uppercase capitalize and lowercase
+let textCaseTransform = '';
+
+document.getElementById('text-transform').addEventListener('click', function () {
+    if (textCaseTransform === '') {
+        outputBox.style.textTransform = 'uppercase';
+        textCaseTransform = 'uppercase';
+    }
+    else if (textCaseTransform === 'uppercase') {
+        outputBox.style.textTransform = 'capitalize';
+        textCaseTransform = 'capitalize';
+    }
+    else if (textCaseTransform === 'capitalize') {
+        outputBox.style.textTransform = 'lowercase';
+        textCaseTransform = 'lowercase';
+    }
+    else {
+        outputBox.style.textTransform = '';
+        textCaseTransform = '';
+    }
+});
