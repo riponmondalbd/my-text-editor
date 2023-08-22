@@ -11,6 +11,7 @@ body {
 button:hover {
     background-color: rgb(206, 203, 199);
     border: none;
+    border-radius: 2px;
 }
 
 button:focus {
@@ -65,4 +66,12 @@ button:focus {
 .color-box {
     padding-bottom: 13px;
     padding-top: 5px;
+}
+
+.color-box:hover {
+    border: none;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    padding-top: 8px;
+    border-radius: 2px;
 }
