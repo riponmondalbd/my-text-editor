@@ -5,12 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Text Editor</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/5ce96db8a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1>My Text Editor</h1>
+        <h1 class="main-header">My Text Editor</h1>
     </header>
+    <main>
+        <!-- header functional Component -->
+        <div class="functional-container">
+            <div class="functional-single-component">
+                <button class="btn-feater"><i class="fa-solid fa-bold"></i></button>
+                <button class="btn-feater"><i class="fa-solid fa-italic"></i></button>
+                <button class="btn-feater"><i class="fa-solid fa-underline"></i></button>
+            </div>
+            <div class="functional-single-component">
+                <button class="btn-feater"><i class="fa-solid fa-align-left"></i></button>
+                <button class="btn-feater"><i class="fa-solid fa-align-center"></i></button>
+                <button class="btn-feater"><i class="fa-solid fa-align-right"></i></button>
+            </div>
+            <div class="functional-single-component">
+                <button class="btn-feater"><i class="fa-solid fa-font"></i></button>
+                <button class="font-size"><input class="font-size-inner" type="number" name="" id=""></button>
+                <button class="font-size-for-color"><input class="font-size-for-color-inner" type="color" id="favcolor"
+                        name="favcolor" value="#ff0000"><br><br></button>
+            </div>
+        </div>
+        <textarea class="main-text-box" name="" id="" cols="130" rows="35">
+        </textarea>
+    </main>
 </body>
 
 </html>
