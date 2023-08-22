@@ -45,7 +45,13 @@ document.getElementById('btn-underline').addEventListener('click', function () {
 document.getElementById('btn-left-align').addEventListener('click', function () {
     outputBox.style.textAlign = 'left';
 })
+
 // make text center align to click button
 document.getElementById('btn-center-align').addEventListener('click', function () {
     outputBox.style.textAlign = 'center';
+})
+
+// make text center align to click button
+document.getElementById('btn-right-align').addEventListener('click', function () {
+    outputBox.style.textAlign = 'right';
 })
