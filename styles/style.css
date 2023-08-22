@@ -19,6 +19,7 @@ button:focus {
     border: none;
 }
 
+
 /* functional body styles */
 .functional-container {
     width: 800px;
@@ -41,21 +42,16 @@ button:focus {
     height: 50px;
 }
 
-.font-size-inner {
-    width: 35px;
-}
 
 /* button for color */
 .font-size-for-color {
     height: 50px;
 }
 
-.font-size-for-color-inner {
-    height: 32px;
-}
 
 /* text aria main text box */
 .main-text-box {
+    font-size: 16px;
     display: block;
     margin: 0 auto;
     padding: 20px;
@@ -64,4 +60,9 @@ button:focus {
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.color-box {
+    padding-bottom: 13px;
+    padding-top: 5px;
 }

@@ -77,3 +77,10 @@ document.getElementById('text-transform').addEventListener('click', function () 
         textCaseTransform = '';
     }
 });
+
+//change color using color picker
+document.getElementById('color-picker').addEventListener('input', function (colorCustom) {
+    const colorPicker = document.getElementById('color-picker');
+    const selectColor = colorPicker.value;
+    outputBox.style.color = selectColor;
+})
